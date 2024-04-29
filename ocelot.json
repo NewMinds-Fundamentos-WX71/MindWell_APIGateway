@@ -1,0 +1,16 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/v1/patients",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44343
+        }
+      ],
+      "UpstreamPathTemplate": "/apigateway/patients",
+      "UpstreamHttpMethod": ["Get", "Post"]
+    }
+  ]
+}
