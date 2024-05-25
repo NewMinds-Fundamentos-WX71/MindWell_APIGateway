@@ -101,6 +101,36 @@
         "Get",
         "Post"
       ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/notifications",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7095
+        }
+      ],
+      "UpstreamPathTemplate": "/apigateway/notifications",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Post"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/personallogs",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7038
+        }
+      ],
+      "UpstreamPathTemplate": "/apigateway/personallogs",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Post"
+      ]
     }
   ]
 }
