@@ -395,6 +395,30 @@
     },
 
     {
+      "DownstreamPathTemplate": "/api/v1/fetchhistories",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7204
+        }
+      ],
+      "UpstreamPathTemplate": "/apigateway/fetchhistories",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/fetchhistories",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7204
+        }
+      ],
+      "UpstreamPathTemplate": "/apigateway/fetchhistories",
+      "UpstreamHttpMethod": [ "Put" ]
+    },
+    {
       "DownstreamPathTemplate": "/api/v1/resources",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
