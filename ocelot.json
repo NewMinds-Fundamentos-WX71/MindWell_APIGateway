@@ -6,7 +6,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7009
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/apigateway/patients",
@@ -18,7 +18,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7009
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/apigateway/patients/{id}",
@@ -30,7 +30,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7009
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/apigateway/patients/verify-patient",
@@ -42,7 +42,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7009
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/apigateway/patients/update-password/{id}",
@@ -55,7 +55,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7047
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/apigateway/assessments",
@@ -67,7 +67,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7047
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/apigateway/assessments/{id}",
@@ -79,7 +79,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7047
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/apigateway/assessments/calc-anxiety",
@@ -91,7 +91,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7047
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/apigateway/assessments/calc-depression",
@@ -104,7 +104,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7047
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/apigateway/assessmentsrecommendations",
@@ -116,7 +116,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7047
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/apigateway/assessmentsrecommendations/{id}",
@@ -128,7 +128,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7047
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/apigateway/assessmentsrecommendations/assessment/{id}",
@@ -140,7 +140,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7047
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/apigateway/assessmentsrecommendations/recommendation/{id}",
@@ -153,7 +153,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7047
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/apigateway/diagnoses",
@@ -165,7 +165,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7047
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/apigateway/diagnoses/{id}",
@@ -178,7 +178,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7047
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/apigateway/questions",
@@ -190,7 +190,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7047
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/apigateway/questions/{id}",
@@ -202,7 +202,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7047
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/apigateway/questions/test/{id}",
@@ -215,7 +215,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7047
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/apigateway/recommendations",
@@ -227,7 +227,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7047
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/apigateway/recommendations/{id}",
@@ -239,7 +239,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7047
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/apigateway/recommendations/diagnosis/{id}",
@@ -251,7 +251,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7047
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/apigateway/recommendations/depression-test/{score}",
@@ -263,7 +263,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7047
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/apigateway/recommendations/anxiety-test/{score}",
@@ -276,7 +276,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7047
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/apigateway/tests",
@@ -288,7 +288,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7047
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/apigateway/tests/{id}",
@@ -301,7 +301,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7047
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/apigateway/treatments",
@@ -313,7 +313,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7047
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/apigateway/treatments/{id}",
@@ -326,7 +326,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7095
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/apigateway/notifications",
@@ -338,7 +338,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7095
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/apigateway/notifications/{id}",
@@ -350,7 +350,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7095
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/apigateway/notifications/user/{id}",
@@ -363,7 +363,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7038
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/apigateway/personallogs",
@@ -375,7 +375,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7038
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/apigateway/personallogs/{id}",
@@ -387,7 +387,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7038
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/apigateway/personallogs/user/{id}",
@@ -400,7 +400,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7204
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/apigateway/fetchhistories",
@@ -412,7 +412,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7204
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/apigateway/fetchhistories",
@@ -424,7 +424,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7204
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/apigateway/resources",
@@ -436,7 +436,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7204
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/apigateway/resources/{id}",
@@ -448,7 +448,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7204
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/apigateway/resources/category",
@@ -460,7 +460,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7204
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/apigateway/resources/fetch-resources",
@@ -473,7 +473,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7204
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/apigateway/usersresources",
@@ -485,7 +485,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7204
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/apigateway/usersresources/{id}",
@@ -497,7 +497,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7204
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/apigateway/usersresources/user/{userId}",
@@ -509,7 +509,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7204
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/apigateway/usersresources/resource/{resourceId}",
