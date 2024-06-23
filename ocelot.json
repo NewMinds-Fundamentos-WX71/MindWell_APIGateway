@@ -10,23 +10,45 @@
         }
       ],
       "UpstreamPathTemplate": "/apigateway/patients",
-      "UpstreamHttpMethod": ["Get", "Post"]
+      "UpstreamHttpMethod": [ "Get", "Post" ]
     },
     {
-      "DownstreamPathTemplate": "/api/v1/assessmentquestions",
+      "DownstreamPathTemplate": "/api/v1/patients/{id}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7047
+          "Port": 7009
         }
       ],
-      "UpstreamPathTemplate": "/apigateway/assessmentquestions",
-      "UpstreamHttpMethod": [
-        "Get",
-        "Post"
-      ]
+      "UpstreamPathTemplate": "/apigateway/patients/{id}",
+      "UpstreamHttpMethod": [ "Get", "Put", "Delete" ]
     },
+    {
+      "DownstreamPathTemplate": "/api/v1/patients/verify-patient",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7009
+        }
+      ],
+      "UpstreamPathTemplate": "/apigateway/patients/verify-patient",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/patients/update-password/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7009
+        }
+      ],
+      "UpstreamPathTemplate": "/apigateway/patients/update-password/{id}",
+      "UpstreamHttpMethod": [ "Put" ]
+    },
+
     {
       "DownstreamPathTemplate": "/api/v1/assessments",
       "DownstreamScheme": "https",
@@ -37,11 +59,94 @@
         }
       ],
       "UpstreamPathTemplate": "/apigateway/assessments",
-      "UpstreamHttpMethod": [
-        "Get",
-        "Post"
-      ]
+      "UpstreamHttpMethod": [ "Get", "Post" ]
     },
+    {
+      "DownstreamPathTemplate": "/api/v1/assessments/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7047
+        }
+      ],
+      "UpstreamPathTemplate": "/apigateway/assessments/{id}",
+      "UpstreamHttpMethod": [ "Get", "Put", "Delete" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/assessments/calc-anxiety",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7047
+        }
+      ],
+      "UpstreamPathTemplate": "/apigateway/assessments/calc-anxiety",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/assessments/calc-depression",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7047
+        }
+      ],
+      "UpstreamPathTemplate": "/apigateway/assessments/calc-depression",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/v1/assessmentsrecommendations",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7047
+        }
+      ],
+      "UpstreamPathTemplate": "/apigateway/assessmentsrecommendations",
+      "UpstreamHttpMethod": [ "Get", "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/assessmentsrecommendations/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7047
+        }
+      ],
+      "UpstreamPathTemplate": "/apigateway/assessmentsrecommendations/{id}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/assessmentsrecommendations/assessment/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7047
+        }
+      ],
+      "UpstreamPathTemplate": "/apigateway/assessmentsrecommendations/assessment/{id}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/assessmentsrecommendations/recommendation/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7047
+        }
+      ],
+      "UpstreamPathTemplate": "/apigateway/assessmentsrecommendations/recommendation/{id}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+
     {
       "DownstreamPathTemplate": "/api/v1/diagnoses",
       "DownstreamScheme": "https",
@@ -52,11 +157,21 @@
         }
       ],
       "UpstreamPathTemplate": "/apigateway/diagnoses",
-      "UpstreamHttpMethod": [
-        "Get",
-        "Post"
-      ]
+      "UpstreamHttpMethod": [ "Get" ]
     },
+    {
+      "DownstreamPathTemplate": "/api/v1/diagnoses/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7047
+        }
+      ],
+      "UpstreamPathTemplate": "/apigateway/diagnoses/{id}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+
     {
       "DownstreamPathTemplate": "/api/v1/questions",
       "DownstreamScheme": "https",
@@ -67,11 +182,33 @@
         }
       ],
       "UpstreamPathTemplate": "/apigateway/questions",
-      "UpstreamHttpMethod": [
-        "Get",
-        "Post"
-      ]
+      "UpstreamHttpMethod": [ "Get" ]
     },
+    {
+      "DownstreamPathTemplate": "/api/v1/questions/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7047
+        }
+      ],
+      "UpstreamPathTemplate": "/apigateway/questions/{id}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/questions/test/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7047
+        }
+      ],
+      "UpstreamPathTemplate": "/apigateway/questions/test/{id}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+
     {
       "DownstreamPathTemplate": "/api/v1/recommendations",
       "DownstreamScheme": "https",
@@ -82,26 +219,107 @@
         }
       ],
       "UpstreamPathTemplate": "/apigateway/recommendations",
-      "UpstreamHttpMethod": [
-        "Get",
-        "Post"
-      ]
+      "UpstreamHttpMethod": [ "Get" ]
     },
     {
-      "DownstreamPathTemplate": "/api/v1/treatmentvalidations",
+      "DownstreamPathTemplate": "/api/v1/recommendations/{id}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7210
+          "Port": 7047
         }
       ],
-      "UpstreamPathTemplate": "/apigateway/treatmentvalidations",
-      "UpstreamHttpMethod": [
-        "Get",
-        "Post"
-      ]
+      "UpstreamPathTemplate": "/apigateway/recommendations/{id}",
+      "UpstreamHttpMethod": [ "Get" ]
     },
+    {
+      "DownstreamPathTemplate": "/api/v1/recommendations/diagnosis/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7047
+        }
+      ],
+      "UpstreamPathTemplate": "/apigateway/recommendations/diagnosis/{id}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/recommendations/depression-test/{score}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7047
+        }
+      ],
+      "UpstreamPathTemplate": "/apigateway/recommendations/depression-test/{score}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/recommendations/anxiety-test/{score}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7047
+        }
+      ],
+      "UpstreamPathTemplate": "/apigateway/recommendations/anxiety-test/{score}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/v1/tests",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7047
+        }
+      ],
+      "UpstreamPathTemplate": "/apigateway/tests",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/tests/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7047
+        }
+      ],
+      "UpstreamPathTemplate": "/apigateway/tests/{id}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/v1/treatments",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7047
+        }
+      ],
+      "UpstreamPathTemplate": "/apigateway/treatments",
+      "UpstreamHttpMethod": [ "Get", "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/treatments/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7047
+        }
+      ],
+      "UpstreamPathTemplate": "/apigateway/treatments/{id}",
+      "UpstreamHttpMethod": [ "Get", "Put", "Delete" ]
+    },
+    
     {
       "DownstreamPathTemplate": "/api/v1/notifications",
       "DownstreamScheme": "https",
@@ -112,11 +330,33 @@
         }
       ],
       "UpstreamPathTemplate": "/apigateway/notifications",
-      "UpstreamHttpMethod": [
-        "Get",
-        "Post"
-      ]
+      "UpstreamHttpMethod": [ "Get", "Post" ]
     },
+    {
+      "DownstreamPathTemplate": "/api/v1/notifications/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7095
+        }
+      ],
+      "UpstreamPathTemplate": "/apigateway/notifications/{id}",
+      "UpstreamHttpMethod": [ "Get", "Put", "Delete" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/notifications/user/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7095
+        }
+      ],
+      "UpstreamPathTemplate": "/apigateway/notifications/user/{id}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+
     {
       "DownstreamPathTemplate": "/api/v1/personallogs",
       "DownstreamScheme": "https",
@@ -127,10 +367,129 @@
         }
       ],
       "UpstreamPathTemplate": "/apigateway/personallogs",
-      "UpstreamHttpMethod": [
-        "Get",
-        "Post"
-      ]
+      "UpstreamHttpMethod": [ "Get", "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/personallogs/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7038
+        }
+      ],
+      "UpstreamPathTemplate": "/apigateway/personallogs/{id}",
+      "UpstreamHttpMethod": [ "Get", "Put", "Delete" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/personallogs/user/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7038
+        }
+      ],
+      "UpstreamPathTemplate": "/apigateway/personallogs/user/{id}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/v1/resources",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7204
+        }
+      ],
+      "UpstreamPathTemplate": "/apigateway/resources",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/resources/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7204
+        }
+      ],
+      "UpstreamPathTemplate": "/apigateway/resources/{id}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/resources/category",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7204
+        }
+      ],
+      "UpstreamPathTemplate": "/apigateway/resources/category",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/resources/fetch-resources",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7204
+        }
+      ],
+      "UpstreamPathTemplate": "/apigateway/resources/fetch-resources",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/v1/usersresources",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7204
+        }
+      ],
+      "UpstreamPathTemplate": "/apigateway/usersresources",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/usersresources/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7204
+        }
+      ],
+      "UpstreamPathTemplate": "/apigateway/usersresources/{id}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/usersresources/user/{userId}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7204
+        }
+      ],
+      "UpstreamPathTemplate": "/apigateway/usersresources/user/{userId}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/usersresources/resource/{resourceId}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7204
+        }
+      ],
+      "UpstreamPathTemplate": "/apigateway/usersresources/resource/{resourceId}",
+      "UpstreamHttpMethod": [ "Get" ]
     }
   ]
 }
