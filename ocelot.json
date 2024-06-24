@@ -74,6 +74,18 @@
       "UpstreamHttpMethod": [ "Get", "Put", "Delete" ]
     },
     {
+      "DownstreamPathTemplate": "/api/v1/assessments/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mindwell-evaluation-service.azurewebsites.net",
+          "Port": 443
+        }
+      ],
+      "UpstreamPathTemplate": "/apigateway/assessments/patientid/{id}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
       "DownstreamPathTemplate": "/api/v1/assessments/calc-anxiety",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
