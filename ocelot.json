@@ -477,7 +477,7 @@
         }
       ],
       "UpstreamPathTemplate": "/apigateway/usersresources",
-      "UpstreamHttpMethod": [ "Get" ]
+      "UpstreamHttpMethod": [ "Get", "Post" ]
     },
     {
       "DownstreamPathTemplate": "/api/v1/usersresources/{id}",
